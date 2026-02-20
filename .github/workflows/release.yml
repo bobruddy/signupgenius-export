@@ -27,4 +27,4 @@ jobs:
       uses: pypa/gh-action-pypi-publish@release/v1
       with:
         trusted-publishing: true
-        repository-url: ${{ github.event_name == 'workflow_dispatch' && 'https://test.pypi.org/legacy/' || 'https://pypi.org/' }}
+        repository-url: ${{ github.event_name == 'workflow_dispatch' && 'https://test.pypi.org/legacy/' || 'https://upload.pypi.org/legacy/' }}
