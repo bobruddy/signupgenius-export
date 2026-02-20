@@ -5,12 +5,12 @@ with open("requirements.txt") as f:
 
 setup(
     name="signupgenius-export",
-    version="1.0.0",
+    version="1.0.2",
     description="Export SignUpGenius signup data to CSV",
     author="Your Name",
     packages=find_packages(),
     py_modules=["export_signup"],
-    install_requires=requirements,
+    install_requires=["requests"],
     entry_points={
         "console_scripts": [
             "signupgenius-export=export_signup:main",
