@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="signupgenius-export",
-    version="1.0.2",
+    version="1.0.3",
     description="Export SignUpGenius signup data to CSV",
     long_description="Export SignUpGenius signup data to CSV",
     long_description_content_type="text/markdown",
