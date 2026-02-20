@@ -4,7 +4,6 @@ from setuptools import setup, find_packages
 setup(
     name="signupgenius-export",
     version="1.0.2",
-    version="1.0.1",
     description="Export SignUpGenius signup data to CSV",
     author="Robert Ruddy",
     packages=find_packages(),
