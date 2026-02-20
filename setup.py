@@ -5,7 +5,7 @@ setup(
     name="signupgenius-export",
     version="1.0.2",
     description="Export SignUpGenius signup data to CSV",
-    long_description=description,
+    long_description="Export SignUpGenius signup data to CSV",
     long_description_content_type="text/markdown",
     author="Robert Ruddy",
     packages=find_packages(),
