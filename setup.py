@@ -5,7 +5,11 @@ with open("requirements.txt") as f:
 
 setup(
     name="signupgenius-export",
+<<<<<<< HEAD
     version="1.0.2",
+=======
+    version="1.0.1",
+>>>>>>> 6a1fd14 (Fix setup.py to hardcode requirements, update author)
     description="Export SignUpGenius signup data to CSV",
     author="Robert Ruddy",
     packages=find_packages(),
