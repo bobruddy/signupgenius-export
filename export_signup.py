@@ -43,6 +43,18 @@ def list_signups(api_key):
     for signup in signups:
         print(f"- {signup.get('title')} (ID: {signup.get('signupid')})")
 
+def get_signup_id(api_key, signup_name):
+    url = f"{BASE_URL}/signups/created/all/?user_key={api_key}"
+    response = requests.get(url)
+    response.raise_for_status()
+    data = response.json()
+    
+    signups = data.get('data', [])
+    for signup in signups:
+        if signup.get('title') == signup_name:
+            return signup.get('signupid')
+    raise ValueError(f"Signup '{signup_name}' not found.")
+
 def export_signup_report(api_key, signup_id, output_file):
     url = f"{BASE_URL}/signups/report/all/{signup_id}/?user_key={api_key}"
     response = requests.get(url)
