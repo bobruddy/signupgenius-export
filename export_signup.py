@@ -3,7 +3,7 @@
 """
 Script to export SignUpGenius signup data to CSV.
 
-Copyright (C) 2026  [Your Name]
+Copyright (C) 2026  Robert Ruddy
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
